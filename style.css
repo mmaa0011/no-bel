@@ -1,1 +1,76 @@
+body {
+    margin: 0;
+    background: #000;
+    font-family: "Yu Gothic", sans-serif;
+  }
+  
+  #game {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* 背景 */
+  #bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* 立ち絵 */
+  #character {
+    position: absolute;
+    bottom: 15%;
+    left: 46%;
+    width: 60%;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+  
+  /* テキストウィンドウ */
+  #textbox {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    padding: 18px;
+    color: #fff;
+    box-sizing: border-box;
+  }
+  
+  #name {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 1.0rem;
+  }
+  
+  #text {
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
 
+  /* 既存CSSはそのまま */
+
+#choices {
+  position: absolute;
+  bottom: 120px;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.choice-btn {
+  background: rgba(255,255,255,0.85);
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+  
